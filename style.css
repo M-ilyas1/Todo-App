@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    align-items: center;
+    background-color: rgba(36, 133, 212, 0.767);
+    
+}
+.data{
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    padding-top: 30px;
+    margin: 50px auto;
+    border-radius: 20px;
+    overflow: scroll;
+    /* box-shadow: 2px 9px 7px 3px white; */
+
+}
+h1{
+    padding-left: 30px;
+    font-family: Arial;
+    font-size: 35px;
+}
+#myInput{
+    padding: 15px 20px;
+    width: 300px;
+    margin-left: 30px;
+    outline: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(36, 133, 212);
+    font-size: 20px;
+}
+.btn{
+    padding: 10px;
+    width: 70px;
+    border-radius: 10px;
+    background-color: rgb(36, 133, 212);
+    color: white;
+    border: 3px solid rgb(36, 133, 212);
+    font-size: 25px;
+    transition: 0.5s;
+}
+/* .btn:hover{
+    font-size: 28px;
+} */
+.myList{
+    background-color: rgba(220, 220, 220, 0.416);
+    font-size: 20px;
+    width: 400px;
+    padding-left: 5px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+#x-btn{
+    background-color: transparent;
+    border: none;
+    color: rgb(36, 133, 212) ;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    border-radius: 10px;
+    /* display: none; */
+    transition: 0.5s;
+}
+#clear{
+    background-color: rgb(36, 133, 212);
+    border: 2px solid rgb(36, 133, 212); 
+    padding: 15px;
+    margin-left: 32px;
+    border-radius: 5px;
+    width: 410px;
+    font-size: 15px;
+    color: white;
+}

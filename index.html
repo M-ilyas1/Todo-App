@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="data">
+        <h1>Todo App</h1>
+        <input id="myInput" type="text" placeholder="Add Text">
+
+        <button onclick="todoApp.addFun()" class="btn"><i class='bx bx-plus-medical'></i></button>
+
+        <ul id="list">
+
+        </ul>
+        <br>
+
+        <button onclick="todoApp.clear()" id="clear">Clear</button>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
