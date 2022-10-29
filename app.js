@@ -1,3 +1,6 @@
+// 2. ======================================================================================================
+
+
 // let input = document.getElementById("myInput")
 // // console.log(input)
 
@@ -35,7 +38,8 @@
 // }
 
 
-// 1. ======================================================================================================
+
+// 2. ======================================================================================================
 
 
 // let input = document.getElementById("myInput");
@@ -74,7 +78,7 @@
 // }
 
 
-// 2 . ===========================================================================================================
+// 3 . ===========================================================================================================
 
 
 // let input = document.getElementById("myInput")
@@ -111,7 +115,7 @@
 // }
 
 
-// 3. ==========================================================================================================
+// 4. ==========================================================================================================
 
 
 // let input = document.getElementById("myInput")
@@ -148,27 +152,64 @@
 // }
 
 
-// 4. ============================================================================================================
+// 5. ============================================================================================================
+
+
+// let input = document.getElementById("myInput")
+
+// let todoList = document.querySelector("#list")
+
+// let list =[]
+
+// let todoApp = {
+//     addFun(){
+//         if(input.value){
+//             list.push(input.value);
+//             input.value =  ""
+//         }
+//         this.myFun()
+//     },
+//     myFun(){
+//         todoList.innerHTML = ""
+//         list.forEach((value, index) =>{
+//             todoList.innerHTML += `<p class="myList">${value}
+//             <button id="x-btn" onclick="todoApp.delete(${index})">
+//             <i class='bx bxs-message-square-x'></i></button></p>`
+//         })
+//     },
+//     delete(index){
+//         list.splice(index, 1)
+//         this.myFun()
+//     },
+//     clear(){
+//         list.splice(0, list.length)
+//         this.myFun()
+        
+//     }
+// }
+
+
+// 6. ============================================================================================================
 
 
 let input = document.getElementById("myInput")
 
-let todoList = document.querySelector("#list")
+let todolist = document.querySelector("#list")
 
-let list =[]
+let list = []
 
 let todoApp = {
     addFun(){
         if(input.value){
             list.push(input.value);
-            input.value =  ""
+            input.value = ""
         }
         this.myFun()
     },
     myFun(){
-        todoList.innerHTML = ""
+        todolist.innerHTML = ""
         list.forEach((value, index) =>{
-            todoList.innerHTML += `<p class="myList">${value}
+            todolist.innerHTML += `<p class="myList">${value}
             <button id="x-btn" onclick="todoApp.delete(${index})">
             <i class='bx bxs-message-square-x'></i></button></p>`
         })
@@ -180,7 +221,8 @@ let todoApp = {
     clear(){
         list.splice(0, list.length)
         this.myFun()
-        
     }
 }
 
+
+// 7. ============================================================================================================
