@@ -73,14 +73,52 @@
 //     }
 // }
 
+
 // 2 . ===========================================================================================================
+
+
+// let input = document.getElementById("myInput")
+
+// let todoList = document.querySelector("#list")
+
+// let list = []
+
+// let todoApp = {
+//     addFun(){
+//         if(input.value){
+//             list.push(input.value)
+//             input.value = ""
+//         }
+//         this.myFun()
+//     },
+//     myFun(){
+//         todoList.innerHTML = ""
+//         list.forEach((value, index) => {
+//             todoList.innerHTML += `<p class="myList">${value}
+//             <button id="x-btn" onclick="todoApp.delete(${index})">
+//             <i class='bx bxs-message-square-x'></i></button></p>`
+//         })
+//     },
+//     delete(index){
+//         list.splice(index, 1)
+//         this.myFun()
+//     },
+//     clear(){
+//         list.splice(0, list.length)
+//         this.myFun()
+//     }
+
+// }
+
+
+// 3. ==========================================================================================================
+
 
 let input = document.getElementById("myInput")
 
 let todoList = document.querySelector("#list")
 
 let list = []
-
 
 let todoApp = {
     addFun(){
@@ -92,12 +130,11 @@ let todoApp = {
     },
     myFun(){
         todoList.innerHTML = ""
-        list.forEach((value, index) => {
+        list.forEach((value, index) =>{
             todoList.innerHTML += `<p class="myList">${value}
             <button id="x-btn" onclick="todoApp.delete(${index})">
             <i class='bx bxs-message-square-x'></i></button></p>`
         })
-
     },
     delete(index){
         list.splice(index, 1)
@@ -106,6 +143,6 @@ let todoApp = {
     clear(){
         list.splice(0, list.length)
         this.myFun()
-    }
 
+    }
 }
